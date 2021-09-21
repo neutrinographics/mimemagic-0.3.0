@@ -16,6 +16,10 @@ gem build mimemagic.gemspec
 
 This will produce a `mimemagic-0.3.0.gem` file.
 
+> Note: do not commit the generated `*.gem` file to the repository.
+> gemspec gets the list of files to include from git,
+> so adding the gem to git will cause a build error `mimemagic-0.3.0 contains itself`.
+
 Usage
 =====
 
